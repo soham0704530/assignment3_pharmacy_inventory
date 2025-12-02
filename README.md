@@ -1,31 +1,13 @@
+Pharmacy & Inventory Analytics – Assignment 3
 
-# Assignment 3 — Pharmacy & Inventory Analytics
+Neuralbits Technologies Pvt. Ltd – Python Internship
 
-## What’s in this repo
-- SQL/assignment3_queries.sql — All SQL queries with descriptions.
-- notebook/assignment3_analysis.ipynb — Notebook to run queries and produce outputs (paste notebook cells provided).
-- outputs/ — where CSVs, charts and intermediate outputs will be stored after running the notebook.
-- docs/report_summary.md — Executive summary, insights, recommendations.
-- docs/project_writeups.md — Two 200–300 word live project descriptions.
-- README.md — this file.
+This repository contains the complete solution for Assignment 3 based on pharmacy and inventory analytics. The goal of this project is to analyze medicine inventory, purchase batches, suppliers, sales data, expiry tracking, and overall pharmacy performance using SQL and Python.
 
-## How to run
-1. Ensure you have a Postgres DB with the data loaded. If not, load CSVs into tables: Medicine, Supplier, Purchase_Stock, Pharmacy_Sale, Pharmacy_Sale_Item.
-2. Set environment variables or edit the notebook connection variables:
-   - DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME
-3. (Optional) Create indexes for performance (see suggestions in the assignment instructions).
-4. Open the Jupyter notebook and run cells in order. The notebook reads SQL from `SQL/assignment3_queries.sql` and writes CSV outputs to `outputs/`.
-5. Inspect `outputs/` for the result CSVs and `outputs/*.png` for charts.
+The project includes all SQL queries required in the assignment, a Python script that can run these queries automatically, a Jupyter notebook for analysis, and a synthetic dataset to test the queries. The SQL file contains short explanations for each query, and the Python script helps automate the execution and save results as CSV files. The repository also contains short project write-ups and a summary of insights based on the dataset.
 
-## Notes & assumptions
-- The notebook expects PostgreSQL and SQL uses Postgres date functions. Adjust date syntax if using MySQL or SQLite.
-- Replace :start_date and :end_date placeholders in the SQL or pass them via the notebook params.
-- If many sale items lack batch matches, consider fallback pricing (latest purchase price) and document this assumption.
+This project demonstrates skills in database querying, data analysis, Python scripting, and basic reporting. It also includes an optional Streamlit app that can display simple information like near-expiry medicines, top-selling items, and low stock alerts.
 
-## Deliverables to submit
-- `assignment3_queries.sql` (with inline 2–3 line explanations).  
-- `assignment3_analysis.ipynb` (or Python script) that runs queries and saves CSV outputs.  
-- `outputs/` CSVs and charts.  
-- `docs/report_summary.md` and `docs/project_writeups.md`.  
-- Zip the repo or share a GitHub link.
+All files needed for the assignment are included in this repository so that the evaluation team can review the SQL logic, Python workflow, sample data, and analysis. This README provides a simple overview of what the project contains and what it is meant to do.
 
+If needed, you may run the SQL queries or the Python script using your preferred tools, but all required components for the assignment have already been provided.
